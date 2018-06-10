@@ -19,3 +19,4 @@
 - https://www.datathief.org/
 - http://vis.stanford.edu/files/2011-ReVision-UIST.pdf
 - https://github.com/markummitchell/engauge-digitizer
+- https://github.com/bloomberg/scatteract
