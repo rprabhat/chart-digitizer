@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="PlotDigitizer" default="install" basedir=".">
+    <property name="dispName" value="Plot Digitizer"/> <!-- Application display name-->
+    <property name="version" value="2.6.8"/> <!-- MacOS X version string -->
+	<property name="src" location="src"/> <!-- java source folder -->
+	<property name="bin" location="bin"/> <!-- intermediate build products -->
+	<property name="jars" location="jars"/> <!-- jar files -->
+	<property name="lib" location="lib"/> <!-- local libraries linked against -->
+	<property name="dist" location="dist"/> <!-- build product location -->
+	<property name="resources" location="Resources"/> <!-- location of general java resources -->
+	<property name="resources_macosx" location="resources_macosx"/> <!-- location of Mac OS X specific resources -->
+	<property name="compile.debug" value="true"/>
+	<property name="application.resources" location="${dist}/${ant.project.name}.app/Contents/Resources"/>
+	<property name="launch4j.dir" location="../../MyJavalib/launch4j" />
+
+	<!-- lib directory should contain any pre-built jar files needed to build the project -->
+	<fileset id="lib.jars" dir="${lib}">
+		<include name="**/*.jar"/>
+	</fileset>
+
+	<path id="lib.path">
+		<fileset refid="lib.jars"/>
+	</path>
+
+	<!-- Initialization target, for any prelimary setup needed to build -->
+	<target name="init" description="Preparation">
+		<mkdir dir="${src}"/>
+		<mkdir dir="${lib}"/>
+	</target>
+
+	<target name="compile" depends="init" description="Compile code">
+		<mkdir dir="${bin}"/>
+		<javac deprecation="on" srcdir="${src}" destdir="${bin}" encoding="UTF-8"
+			   source="1.6" target="1.6"
+			   includeAntRuntime="no"
+			   classpathref="lib.path" debug="${compile.debug}">
+		</javac>
+	</target>
+
+	<target name="jar" depends="compile" description="Build jar">
+		<mkdir dir="${jars}"/>
+		<jar jarfile="${jars}/${ant.project.name}.jar" basedir="${bin}" manifest="${resources}/Manifest">
+			<!-- Inject resources -->
+			<fileset dir="${resources}/"
+				excludes="${resources}/Manifest"
+			/>
+			<!-- Merge library jars into final jar file -->
+			<zipgroupfileset refid="lib.jars"/>
+		</jar>
+	</target>
+	
+	<target name="run-jar" depends="jar">
+		<java jar="${jars}/${ant.project.name}.jar" fork="true">
+		</java>
+	</target>
+	
+	<target name="package" depends="jar" description="Make a double-clickable Mac OS X application">
+		<mkdir dir="${dist}"/>
+		
+        <!-- Import the AppBundlerTask from the specified directory -->
+        <taskdef name="bundleapp"
+             classname="com.oracle.appbundler.AppBundlerTask"   
+             classpath="appbundler/appbundler-1.0.jar" />
+
+	    <!-- Create the MacOS Application Bundle -->
+        <bundleapp outputdirectory="dist"
+            name="${ant.project.name}"
+            displayname="${dispName}"
+            identifier="jahuwaldt.${ant.project.name}"
+            shortversion="${version}"
+            icon="${resources_macosx}/${ant.project.name}.icns"
+            copyright="Copyright © 2000-2015, Joseph A. Huwaldt"
+            mainclassname="${ant.project.name}">
+            
+            <!-- The bundleapp task doesn't support classpathref so all 
+                the run classpath entries must be stated here too.
+            -->
+            <classpath file="${jars}/${ant.project.name}.jar" />
+            
+            <!-- OSX specific options, optional -->
+            <option value="-Dapple.laf.useScreenMenuBar=true"/>
+            <option value="-Dcom.apple.macos.use-file-dialog-packages=true"/>
+            <option value="-Dapple.awt.application.name=${dispName}"/>
+            <option value="-Dmrj.version=1060.1.7.0_43-447"/>
+            
+            <!-- Other Options -->
+            <option value="-Xmx256m"/>
+            
+        </bundleapp>
+        
+		<!-- copy any localizations -->
+		<copy todir="${application.resources}">
+			<fileset dir="${resources_macosx}/localizations"/>   
+		</copy>
+		
+	</target>
+
+	<target name="exe" depends="jar" description="Make a double-clickable Windows application">
+		<taskdef name="launch4j" classname="net.sf.launch4j.ant.Launch4jTask" classpath="${launch4j.dir}/launch4j.jar
+		    :${launch4j.dir}/lib/xstream.jar" />
+		<launch4j configFile="./l4j/PlotDigitizerApp.xml"
+			jar="${jars}/${ant.project.name}.jar"
+			outfile="${dist}/${ant.project.name}.exe"
+		/>
+	</target>
+	
+	<!-- Install target, for building the actual product -->
+	<target name="install" description="Create application" depends="package,exe">
+	</target>
+
+    <target name="run" depends="install" description="Run the double-clickable application">
+        <!-- Use the exec task to open the application -->
+        <exec dir="${dist}" executable="/usr/bin/open" os="Mac OS X">
+            <arg line="${ant.project.name}.app"/>
+        </exec>
+    </target>
+    
+    <target name="clean" description="Remove build and dist directories">
+		<delete dir="${bin}"/>
+		<delete dir="${jars}"/>
+		<delete dir="${dist}"/>
+	</target>
+</project>

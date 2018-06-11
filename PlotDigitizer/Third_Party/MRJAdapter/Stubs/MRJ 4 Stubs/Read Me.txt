@@ -1,0 +1,3 @@
+This stubs file comes from Apple:
+
+<http://developer.apple.com/samplecode/AppleJavaExtensions/AppleJavaExtensions.html>

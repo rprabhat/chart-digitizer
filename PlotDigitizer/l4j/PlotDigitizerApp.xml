@@ -1,0 +1,35 @@
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>../jars/PlotDigitizer.jar</jar>
+  <outfile>../dist/PlotDigitizer.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir></chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://www.java.com</downloadUrl>
+  <supportUrl></supportUrl>
+  <customProcName>false</customProcName>
+  <stayAlive>false</stayAlive>
+  <manifest></manifest>
+  <icon>PlotDigitizerIcon.ico</icon>
+  <jre>
+    <path></path>
+    <minVersion>1.6.0</minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <maxHeapSize>256</maxHeapSize>
+  </jre>
+  <versionInfo>
+    <fileVersion>2.6.8.0</fileVersion>
+    <txtFileVersion>2.6.8</txtFileVersion>
+    <fileDescription>Program to digitize plotted data</fileDescription>
+    <copyright>2000-2015, Joseph A. Huwaldt</copyright>
+    <productVersion>2.6.8.0</productVersion>
+    <txtProductVersion>2.6.8</txtProductVersion>
+    <productName>Program to digitize plotted data</productName>
+    <companyName></companyName>
+    <internalName>Plot Digitizer</internalName>
+    <originalFilename>PlotDigitizer.exe</originalFilename>
+  </versionInfo>
+</launch4jConfig>

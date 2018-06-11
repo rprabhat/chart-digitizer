@@ -1,0 +1,1 @@
+#!/bin/shjava -cp .:MRJAdapter.jar Test

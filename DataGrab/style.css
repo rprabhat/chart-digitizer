@@ -1,0 +1,28 @@
+
+body {
+background-color: #eee;
+font-size:100%;
+font-style:normal;
+margin:2 em;
+padding:0 1em;
+font-family: Verdana, Tahoma, Arial, Sans-serif;
+}
+a:link    { color: black; text-decoration: underline; }
+a:hover {color: blue; text-decoration: underline;}
+a:visited:hover {color: blue; text-decoration: underline;}
+a:visited, a:link:active { color: black; }
+
+a.nav:link {color: black; text-decoration: none; font-size:80%; }
+a.nav:visited {color: black; text-decoration: none; font-size:80%;}
+a.nav:hover {color: black; text-decoration: none; font-size:80%;}
+a.nav:active {color: black; text-decoration: none; font-size:80%;}
+
+/*header styles*/
+h1, h2, h3, h4, h5, h6, #commentbox legend, #searchform label, #wp-calendar caption, #sidebar h2 a {
+font-family :'URW Gothic L', 'Century Gothic', 'Trebuchet MS', Tahoma, Arial, 
+   Verdana, Helvetica, Sans-Serif; 
+color : #333; 
+margin: 10px 0px;
+padding:2px 0px;
+font-weight:normal;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "WebPlotDigitizer",
+  "version": "4.2.0",
+  "description": "Extract data from images of charts",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/ankitrohatgi/WebPlotDigitizer.git",
+  "keywords": [
+    "WebPlotDigitizer"
+  ],
+  "author": "Ankit Rohatgi",
+  "license": "AGPL-3.0",
+  "devDependencies": {
+    "electron": "~1.8.4"
+  },
+  "dependencies": {
+    "electron-packager": "^12.1.0"
+  }
+}

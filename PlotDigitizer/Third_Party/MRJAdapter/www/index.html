@@ -1,0 +1,233 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />                                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<P><B>[ <A HREF="#change_history">Change History</A>
+| <A HREF="#features">Features</A>
+| <A HREF="#documentation">Documentation</A>
+| <A HREF="#screenshots">Screenshots</A>
+| <A HREF="#links">Links</A> ]</B></P>
+
+<P>The term "MRJ", or Macintosh Runtime for Java, used to be the name
+of Apple's Java virtual machine in the days of classic Mac OS. When
+Mac OS X came along, the use of the name faded slowly until Apple's Java
+1.4 virtual machine came to life, which completely dropped any reference
+to the name. Maybe I should drop the reference as well for MRJ Adapter,
+but until I do, let's make it clear that MRJ Adapter is a library that
+
+allows your code to work with any and all versions of Apple's Java virtual
+machine, from the oldest to the latest and greatest.</P>
+
+<P>MRJ Adapter is partially a wrapper around some APIs provided by Apple
+and which are built into their various virtual machines. However, they
+have changed over time and some APIs were not always available, so MRJ
+Adapter provides a consistent API for the developer wanting to target
+the Mac.</P>
+
+<P>MRJ Adapter is an easier path for developers because it is easier to
+learn, leveraging concepts they already know, such as action listeners
+to handle menu items. It also shields the developer from the problems
+associated with compiling their code on other platforms when the APIs
+they need only exist on the Mac.</P>
+
+<P>MRJ Adapter incorporates a wealth of knowledge and little-known tricks
+about Apple's virtual machines that no developer should be expected to
+know off-hand, especially if they come from other platforms. Things
+like how to bring up a folder chooser dialog, or how to open a document
+with the application that created it are addressed by MRJ Adapter.</P>
+
+<P>MRJ Adapter implements many things the Apple APIs don't address, such
+as automatic handling of all-inclusive menu bars, assignment of a menu
+bar to be shown when no frame is visible, and more.</P>
+
+<P>I wrote this library because I needed this functionality in my work
+and I found that it would be of interest to many other developers.</P>
+
+<!-- Change History -->
+<h2><a name="change_history">Change History</a></h2>
+
+<P><B>Version 1.2</B></P>
+
+<UL>
+       <LI>Fixed bug associated with Java for Mac OS X 10.6 Update 3 where the Preferences menu item does not appear in the application menu when attaching an ActionListener to it.</LI>
+</UL>
+
+<P><B>Version 1.1</B></P>
+
+<UL>
+       <LI>Fixed frameless menu bar was showing a frame under certain circumstances.</LI>
+       <LI>Fixed parsing of mrj.version property on Mac OS X 10.5.</LI>
+       <LI>Fix for NullPointerException when using StandardMacAboutFrame in CDE/Motif L&F.</LI>
+       <LI>Renamed 'enum' variables for compilation with Java 1.5.</LI>
+       <LI>Fixed MRJAdapter.getFileCreator() to work with application bundles.</LI>
+</UL>
+
+<!-- Features -->
+<h2><a name="features">Features</a></h2>
+
+<H4>Unified APIs & Functionality</H4>
+
+<UL>
+	<LI>Get and set file types and creator codes.</LI>
+	
+	<LI>Find special folders defined by the OS.</LI>
+	
+	<LI>Find applications by creator code.</LI>
+	
+	<LI>Find resource files in application bundles.</LI>
+	
+	<LI>Open URLs in the user's favorite browser.</LI>
+	
+	<LI>Handle the OS-provided About, Preferences and Quit menu items.</LI>
+	
+	<LI>Enable and disable the Preferences menu item.</LI>
+	
+	<LI>Handle the Apple events Open Application, Reopen Application, Quit Application, Open Document, and Print Document.</LI>
+</UL>
+
+<H4>MRJ Adapter Specific Additions</H4>
+
+<UL>
+	<LI>Handle the OS-provided Preferences menu item on MRJ 3.0 and MRJ 3.1 (Java 1.3.1 on Mac OS X). This was only introduced by Apple in MRJ 3.2.</LI>
+	
+	<LI>Handle the Reopen Application event on MRJ 2.x and 3.x. This was only introduced by Apple in MRJ 4.3.</LI>
+	
+	<LI>Enable and disable the Preferences menu item in VMs prior to Java 1.4.1. This was missing before 1.4.1.</LI>
+	
+	<LI>Find applications in MRJ 3.0 and up (Java 1.3.1 and up). This was dropped by Apple starting with MRJ 3.0.</LI>
+	
+	<LI>Open URLs in the user's favorite browser in VMs prior to MRJ 2.2. This was missing before MRJ 2.2.</LI>
+	
+	<LI>Find out whether the About, Preferences and Quit menu items are provided by the OS or not on the current platform. This was different on classic Mac OS than it is on Mac OS X, is never the case on other platforms, and there is no method in the Apple APIs to discover this.</LI>
+
+	<LI>Multiple listeners for all Mac-specific events. The Apple APIs lacked this before MRJ 4.1 (Java 1.4.1).</LI>
+	
+	<LI>Handling of all Mac-specific events via familiar MenuItems, JMenuItems, ActionEvents, ActionListeners and Actions. The Apple APIs use Mac-specific events and listeners.</LI>
+	
+
+	<LI>Find out whether Swing is currently using the screen menu bar or not. This can be true or false depending on the system properties set, and on the Swing L&F currently in use, and there is no method in the Apple classes to discover this.</LI>
+	
+	<LI>Set a menu bar to be shown when no frame is visible. This is a normal state for a Mac application and Java has no built-in facility to do this, nor does Apple provide any API for it.</LI>
+	
+	<LI>Get the name of the startup disk. This has always been missing from the Apple APIs.</LI>
+	
+	<LI>Bring up a dialog for choosing a folder. There was a way to do this in the Apple VMs prior to 1.4.1, but it was undocumented.</LI>
+	
+
+	<LI>Bring up a dialog for choosing an application on disk. A convenience that makes use of the working FilenameFilter on the Mac, and which also makes sure bundles are not traversable.</LI>
+	
+	<LI>Launch applications as well as open documents, either by the application that created them or by one of your choice, all in a way that isolates your code from highly platform dependant mechanisms. This is missing in the Apple APIs.</LI>
+
+	<LI>Retrieve file types and creator codes from Mac bundles stored on other platforms.</LI>
+	
+	<LI>Find out if the underlying platform implements Apple's JDirect technology, and if so, which version of it.</LI>
+
+	<LI>Create menu bars that are automatically all-inclusive on Mac OS while remaining distinct to each frame on other platforms. There is nothing built into Java to do this, and Apple never provided a solution for it.</LI>
+
+	<LI>Use actions with JMenuItems in Swing 1.1 as well as AWT MenuItems. This functionality was introduced by Sun in Swing in Java 1.2, and AWT doesn't support actions.</LI>
+
+	<LI>Have menus automatically disable themselves when all their items become disabled. Conversely, have menus enable themselves when any item becomes enabled.</LI>
+	
+	<LI>Show a standard About box similar to the one provided by the Cocoa framework on Mac OS X, while being cross-platform.</LI>
+	
+	<LI>Open the resource fork of a file.</LI>
+</UL>
+	
+<H4>Other Features</H4>
+
+<UL>
+	<LI>Supports Java 1.1 and up on all platforms, starting with MRJ 1.5 (Java 1.1) on classic Mac OS all the way through JDK 1.4.2 on Mac OS X.</LI>
+	
+	<LI>Supports both AWT and Swing.</LI>
+	
+	<LI>Easy compilation on other platforms. If you link with MRJAdapter.jar, there is no need for stubs of any kind. It will just work, on any platform.</LI>
+	
+	<LI>Stubs provided for compilation of MRJ Adapter on platforms other than the Mac. This is just for compiling, and the stubs don't need to be included in the resulting JAR file.</LI>
+</UL>
+
+<!-- Documentation -->
+<h2><a name="documentation">Documentation</a></h2>
+
+<P><A HREF="nonav/docs/index.html">View the API documentation</A></P>
+
+<H4>Class Diagram</H4>
+
+<P ALIGN="center"><IMG SRC="class_diagram.gif" ALT="Class Diagram" WIDTH="652" HEIGHT="650"></P>
+
+<P><I>Class diagram generously created by Matthieu Cormier.</I></P>
+	
+<!-- Screenshots -->
+<h2><a name="screenshots">Screenshots</a></h2>
+
+<P>The following screen shots are taken from the sample programs included with
+MRJ Adapter and show only a small subset of what MRJ Adapter allows you
+to do.</P>
+
+<P>This first image shows a sample program that uses MRJ Adapter to get the
+information of a file on disk. This information can be edited and changed.
+The file can also be opened using the application that created it or an
+application of your choice (not shown), which is something that is highly
+platform specific, and which supports Windows as well and can be extended
+to other platforms. This functionality is provided by the
+<CODE>net.roydesign.io.DocumentFile</CODE> class.</P>
+
+<P ALIGN="center"><IMG SRC="documents.jpg" ALT="Handling of documents" WIDTH="523" HEIGHT="256"></P>
+
+<P>The next screen shot shows how special folders and specific applications
+can be found on disk. Finding folders is mostly functional on Mac OS at this
+point, and finding applications currently works by the Mac-specific creator
+codes. See the classes <CODE>net.roydesign.io.SpecialFolder</CODE> and
+<CODE>net.roydesign.io.ApplicationFile</CODE>.</P>
+
+<P ALIGN="center"><IMG SRC="foldersandapps.jpg" ALT="Finding folders and applications" WIDTH="679" HEIGHT="209"></P>
+
+<P>This seemingly trivial image shows something rather important in the
+Mac OS realm, namely the concept of an application that has a menu bar but
+no windows, which is a normal and desirable state for a well designed
+Mac application, but something that Java doesn't natively support because
+menu bars must always be attached to frames. MRJ Adapter makes it possible with
+the method <CODE>net.roydesign.mac.MRJAdapter.setFramelessJMenuBar()</CODE>.</P>
+
+<P ALIGN="center"><IMG SRC="frameless.jpg" ALT="Menu bar without windows" WIDTH="410" HEIGHT="138"></P>
+
+<P>Finally MRJ Adapter provides a set of classes to properly handle the
+screen menu bar of Mac OS, which is usually all-inclusive in Mac applications,
+but different on Windows and other platforms. By using the menu classes in
+the package <CODE>net.roydesign.ui</CODE>, your application will behave
+correctly on any platform, without cluttering your code with
+<CODE>if (macos)</CODE> statements and whatnot.</P>
+
+<P ALIGN="center"><IMG SRC="screenmenu.jpg" ALT="Menu bar management" WIDTH="672" HEIGHT="297"></P>
+
+<!-- Links -->
+<h2><a name="links">Links</a></h2>
+
+<P>The following applications use MRJ Adapter:</P>
+
+<UL>
+	<LI><A HREF="http://www.limewire.org" TARGET="_blank">Limewire</A></LI>
+	<LI><A HREF="http://sourceforge.net/projects/omegat" TARGET="_blank">OmegaT</A></LI>
+	<LI><A HREF="http://www.sciss.de/ichnograph/index.html" TARGET="_blank">ichnograph</A></LI>
+	<LI><A HREF="http://developer.mpowerplayer.com/" TARGET="_blank">mpowerplayer</A></LI>
+	<LI><A HREF="http://jomic.sourceforge.net/" TARGET="_blank">Jomic</A></LI>
+	<LI><A HREF="http://www.filemaker.com/downloads/" TARGET="_blank">FileMaker Pro 7</A></LI>
+	<LI><A HREF="http://allusions.sourceforge.net/" TARGET="_blank">Allusions</A></LI>
+	<LI><A HREF="http://homepage.mac.com/jhuwaldt/java/" TARGET="_blank">Wing Geometry, 1976 Standard Atmosphere, Plot Digitizer</A></LI>
+	<LI><A HREF="http://www.roydesign.net/adsuite/" TARGET="_blank">AdSuite</A></LI>
+	<LI><A HREF="http://ccl.sesp.northwestern.edu/netlogo/" TARGET="_blank">NetLogo</A></LI>
+	<LI><A HREF="http://openqtj.dev.java.net" TARGET="_blank">OpenQTJ</A></LI>
+	<LI><A HREF="http://pcgen.sourceforge.net" TARGET="_blank">PCGen</A></LI>
+	<LI><A HREF="http://apst.stsci.edu/apt" TARGET="_blank">Astronomer's Proposal Tool</A></LI>
+	<LI><A HREF="http://celldesigner.org" TARGET="_blank">CellDesigner</A></LI>
+	<LI><A HREF="http://informagen.com/SA/" TARGET="_blank">Sequence Analysis</A></LI>
+	<LI><A HREF="http://sysiphus.in.tum.de/rat/" TARGET="_blank">RAT</A></LI>
+	<LI><A HREF="http://www.randelshofer.ch/multishow/" TARGET="_blank">MultiShow</A></LI>
+	<LI><A HREF="http://www.jaikoz.net/" TARGET="_blank">Jaikoz</A></LI>
+</UL>
+
+<P>The following articles mention MRJ Adapter:</P>
+
+<UL>
+	<LI><A HREF="http://today.java.net/pub/a/today/2003/12/08/swing.html" TARGET="_blank"> Make Your Swing App Go Native</A></LI>
+	<LI><A HREF="http://weblogs.java.net/pub/wlg/772">Going Native</A></LI>
+</UL>
+</td></tr></table> 
+              

@@ -1,0 +1,8 @@
+Plot Digitizer 2.6.8 Release Notes:
+October 27, 2015
+by: Joseph A. Huwaldt
+
+Plot Digitizer is a Java program used to digitize scanned plots of functional data. Often data is found presented in reports and references as functional X-Y type scatter or line plots. In order to use this data, it must somehow be digitized. This program will allow you to take a scanned image of a plot (in GIF, JPEG, or PNG format)  and quickly digitize values off the plot just by clicking the mouse on  each data point. The numbers can then be saved to a text file and used where ever you need them. Plot Digitizer works with both linear and logarithmic axis scales. Besides digitizing points off of data plots, this  program can be used to digitize other types of scanned data (such as  scaled drawings or orthographic photos).
+
+This update is a bug-fix release.
+* Fixed a bug that could cause an exception to be thrown at program startup under certain circumstances.

@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<project name="MRJ Adapter" default="build" basedir=".">
+	
+	<property name="jar.name" value="MRJAdapter.jar" />
+	<property name="library.jar" value="${basedir}/${jar.name}" />
+	<property name="output.dir" value="${basedir}/build/classes" />
+	<property name="src.dir" value="${basedir}/src" />
+	<property name="stubs.dir" value="${basedir}/Stubs" />
+	<property name="doc.dir" value="${basedir}/docs" />
+	<property name="samples.dir" value="${basedir}/Examples" />
+	<property name="distro.dir" value="${basedir}/distro" />
+	
+	<target name="help">
+		<echo message="usage: ant [target]" />
+		<echo message="where possible targets are:" />
+		<echo message="  help      Output this message" />
+		<echo message="  cleanall  Clean everything" />
+		<echo message="  clean     Clean the build output" />
+		<echo message="  buildall  Build everything below" />
+		<echo message="  build	   Build the MRJAdapter.jar library (default)" />
+		<echo message="  samples   Build the sample code" />
+		<echo message="  docs      Create the API documentation" />
+		<echo message="  distro    Package the distribution" />
+	</target>
+	
+	<target name="cleanall" depends="clean">
+		<delete dir="${distro.dir}" />
+		<delete dir="${doc.dir}" />
+		<delete dir="${samples.dir}/Complete App/classes" />
+		<delete>
+			<fileset dir="${samples.dir}/Complete App" includes="*.jar" />
+			<fileset dir="${samples.dir}/Frameless Menu Bar" includes="*.class,*.jar" />
+			<fileset dir="${samples.dir}/Simple MRJAdapter" includes="*.class,*.jar" />
+			<fileset dir="${samples.dir}/Standard Menu Items" includes="*.class,*.jar" />
+			<fileset dir="${samples.dir}/Screen Menu Bar" includes="*.class,*.jar" />
+		</delete>
+	</target>
+	
+	<target name="clean">
+		<delete dir="${output.dir}" />
+		<delete file="${library.jar}" />
+	</target>
+	
+	<target name="buildall" depends="build,samples,docs" />
+	
+	<target name="build">
+		<mkdir dir="${output.dir}" />
+    	<javac srcdir="${src.dir}" destdir="${output.dir}"
+    		target="1.1" source="1.2" deprecation="off" debug="on">
+			<classpath>
+				<fileset dir="${stubs.dir}">
+					<include name="**/*.jar" />
+					<include name="**/*.zip" />
+				</fileset>
+			</classpath>
+		</javac>
+		<jar destfile="${library.jar}" basedir="${output.dir}" includes="**/*.class" />
+	</target> 
+	
+	<target name="samples" depends="build">
+		<copy file="${library.jar}" todir="${samples.dir}/Complete App" />
+        <mkdir dir="${samples.dir}/Complete App/classes" />
+		<javac srcdir="${samples.dir}/Complete App/src"
+			destdir="${samples.dir}/Complete App/classes"
+			classpath="${library.jar}"
+    		target="1.1" source="1.2"
+			debug="on" />
+		<jar destfile="${samples.dir}/Complete App/Test.jar"
+			basedir="${samples.dir}/Complete App/classes"
+			manifest="${samples.dir}/Complete App/Manifest.txt" />
+		
+		<copy file="${library.jar}" todir="${samples.dir}/Frameless Menu Bar" />
+		<javac srcdir="${samples.dir}/Frameless Menu Bar"
+			classpath="${library.jar}"
+    		target="1.1" source="1.2"
+			debug="on" />
+		
+		<copy file="${library.jar}" todir="${samples.dir}/Simple MRJAdapter" />
+		<javac srcdir="${samples.dir}/Simple MRJAdapter"
+			classpath="${library.jar}"
+    		target="1.1" source="1.2"
+			debug="on" />
+		
+		<copy file="${library.jar}" todir="${samples.dir}/Standard Menu Items" />
+		<javac srcdir="${samples.dir}/Standard Menu Items"
+			classpath="${library.jar}"
+    		target="1.1" source="1.2"
+			debug="on" />
+		
+		<copy file="${library.jar}" todir="${samples.dir}/Screen Menu Bar" />
+		<javac srcdir="${samples.dir}/Screen Menu Bar"
+			classpath="${library.jar}"
+    		target="1.1" source="1.2"
+			debug="on" />
+	</target>
+	
+	<target name="docs">
+		<javadoc destdir="${doc.dir}" windowtitle="${ant.project.name}"
+			author="true" version="true">
+			<packageset dir="${src.dir}" />
+		</javadoc>
+	</target>
+	
+	<target name="distro" depends="buildall">
+		<mkdir dir="${distro.dir}" />
+        <copy todir="${distro.dir}">
+            <fileset file="${basedir}/build.xml" />
+            <fileset file="${library.jar}" />
+        </copy>
+        <copy todir="${distro.dir}/docs">
+            <fileset dir="${doc.dir}" />
+        </copy>
+        <copy todir="${distro.dir}/Examples">
+            <fileset dir="${samples.dir}" />
+        </copy>
+        <chmod perm="+x">
+            <fileset dir="${distro.dir}/Examples">
+                <include name="**/*.app/Contents/MacOS/*"/>
+            </fileset>
+        </chmod>
+        <copy todir="${distro.dir}/src">
+            <fileset dir="${src.dir}" />
+        </copy>
+        <copy todir="${distro.dir}/Stubs">
+            <fileset dir="${stubs.dir}" />
+        </copy>
+	</target>
+</project>
