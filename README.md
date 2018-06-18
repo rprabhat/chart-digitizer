@@ -21,3 +21,4 @@
 - https://github.com/markummitchell/engauge-digitizer
 - https://github.com/bloomberg/scatteract
 - https://clgiles.ist.psu.edu/pubs/KCAP2015-bar-charts.pdf
+- http://simplecv.org/
