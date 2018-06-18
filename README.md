@@ -1,6 +1,6 @@
 # chart-digitizer
 
-
+![flow](bar-chart-extraction-flow.png)
 
 
 
