@@ -25,3 +25,4 @@
 - https://learnopencv.com/wp-content/uploads/2015/05/Computer-Vision-Resources.pdf
 - http://szeliski.org/Book/
 - https://github.com/spmallick/learnopencv
+- https://www.pyimagesearch.com/start-here-learn-computer-vision-opencv/
