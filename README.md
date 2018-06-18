@@ -22,3 +22,4 @@
 - https://github.com/bloomberg/scatteract
 - https://clgiles.ist.psu.edu/pubs/KCAP2015-bar-charts.pdf
 - http://simplecv.org/
+- https://learnopencv.com/wp-content/uploads/2015/05/Computer-Vision-Resources.pdf
