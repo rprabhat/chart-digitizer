@@ -26,3 +26,5 @@
 - http://szeliski.org/Book/
 - https://github.com/spmallick/learnopencv
 - https://www.pyimagesearch.com/start-here-learn-computer-vision-opencv/
+- https://github.com/RobinDavid/Pytesser
+- https://github.com/sirfz/tesserocr
