@@ -1,6 +1,6 @@
 # chart-digitizer
 
-
+![flow](bar-chart-extraction-flow.png)
 
 
 
@@ -21,3 +21,10 @@
 - https://github.com/markummitchell/engauge-digitizer
 - https://github.com/bloomberg/scatteract
 - https://clgiles.ist.psu.edu/pubs/KCAP2015-bar-charts.pdf
+- http://simplecv.org/
+- https://learnopencv.com/wp-content/uploads/2015/05/Computer-Vision-Resources.pdf
+- http://szeliski.org/Book/
+- https://github.com/spmallick/learnopencv
+- https://www.pyimagesearch.com/start-here-learn-computer-vision-opencv/
+- https://github.com/RobinDavid/Pytesser
+- https://github.com/sirfz/tesserocr
