@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="702f7963-a9de-45fc-960e-a2c724434127" name="Default" comment="Added reference project code">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chart-digitizer.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/sample-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/sample-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/chart-digitizer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/chart-digitizer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Datathief.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Datathief.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataGrab/480px-No_image_template.svg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataGrab/48px-Gnome-zoom-in.svg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataGrab/48px-Gnome-zoom-original.svg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataGrab/48px-Gnome-zoom-out.svg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataGrab/Crystal_Clear_action_viewmag+.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataGrab/Crystal_Clear_action_viewmag-.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataGrab/help.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataGrab/help2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataGrab/higgs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataGrab/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataGrab/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataGrab/x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datathief/Datathief.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datathief/gc-3.0.3.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/GPL_license.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/LesserGPL_license.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/README_Src.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Release_Notes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Resources/AboutBoxText.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Resources/AboutBoxText_fr.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Resources/Manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Resources/appStrings.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Resources/appStrings_fr.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Resources/images/PlotDigitizerIcon64x64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Resources/logging.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/SamplePlots/Figure_7.1.1.1-11c.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/SamplePlots/LogarithmicAxes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/SamplePlots/f14.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/SamplePlots/figure64.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/SamplePlots/testPlot.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/Manifest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/Test (Mac OS X 1.3).app/Contents/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/Test (Mac OS X 1.3).app/Contents/MacOS/MRJ 3 Test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/Test (Mac OS X 1.3).app/Contents/PkgInfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/Test (Mac OS X 1.3).app/Contents/Resources/English.lproj/Hello.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/Test (Mac OS X 1.4).app/Contents/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/Test (Mac OS X 1.4).app/Contents/MacOS/MRJ 4 Test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/Test (Mac OS X 1.4).app/Contents/PkgInfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/Test (Mac OS X 1.4).app/Contents/Resources/English.lproj/Hello.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/Test (Mac OS X 1.5).app/Contents/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/Test (Mac OS X 1.5).app/Contents/MacOS/MRJ 4 Test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/Test (Mac OS X 1.5).app/Contents/PkgInfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/Test (Mac OS X 1.5).app/Contents/Resources/English.lproj/Hello.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/Test (Mac OS X 1.6).app/Contents/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/Test (Mac OS X 1.6).app/Contents/MacOS/JavaApplicationStub" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/Test (Mac OS X 1.6).app/Contents/PkgInfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/Test (Mac OS X 1.6).app/Contents/Resources/English.lproj/Hello.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/Test.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/src/ApplicationFileFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/src/BundleResourceFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/src/DocumentFileFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/src/FindFolderAndAppFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/src/MainFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/src/MainJFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/src/MainJMenuBar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/src/MainMenuBar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/src/MessageDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/src/OpenURLFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/src/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/test_unix.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Complete App/test_windows.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Frameless Menu Bar/Test (Mac OS X).app/Contents/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Frameless Menu Bar/Test (Mac OS X).app/Contents/MacOS/JavaApplicationStub" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Frameless Menu Bar/Test (Mac OS X).app/Contents/PkgInfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Frameless Menu Bar/Test (Mac OS X).app/Contents/Resources/GenericJavaApp.icns" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Frameless Menu Bar/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Screen Menu Bar/Test (Mac OS X).app/Contents/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Screen Menu Bar/Test (Mac OS X).app/Contents/MacOS/JavaApplicationStub" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Screen Menu Bar/Test (Mac OS X).app/Contents/PkgInfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Screen Menu Bar/Test (Mac OS X).app/Contents/Resources/GenericJavaApp.icns" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Screen Menu Bar/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Screen Menu Bar/test_unix.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Screen Menu Bar/test_windows.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Simple MRJAdapter/Test (Mac OS X).app/Contents/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Simple MRJAdapter/Test (Mac OS X).app/Contents/MacOS/JavaApplicationStub" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Simple MRJAdapter/Test (Mac OS X).app/Contents/PkgInfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Simple MRJAdapter/Test (Mac OS X).app/Contents/Resources/GenericJavaApp.icns" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Simple MRJAdapter/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Standard Menu Items/Test (Mac OS X).app/Contents/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Standard Menu Items/Test (Mac OS X).app/Contents/MacOS/JavaApplicationStub" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Standard Menu Items/Test (Mac OS X).app/Contents/PkgInfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Standard Menu Items/Test (Mac OS X).app/Contents/Resources/GenericJavaApp.icns" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Examples/Standard Menu Items/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Stubs/JDirect 2 Stubs/JDirect2Stubs.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Stubs/JDirect 2 Stubs/com/apple/jdirect/SharedLibrary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Stubs/JDirect 2 Stubs/com/apple/mrj/jdirect/MethodClosure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Stubs/JDirect 2 Stubs/com/apple/mrj/jdirect/MethodClosureUPP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Stubs/JDirect 2 Stubs/com/apple/mrj/macos/libraries/InterfaceLib.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Stubs/JDirect 3 Stubs/JDirect3Stubs.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Stubs/JDirect 3 Stubs/com/apple/mrj/internal/jdirect/Linkage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Stubs/JDirect 3 Stubs/com/apple/mrj/jdirect/Linker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Stubs/JDirect 3 Stubs/com/apple/mrj/jdirect/MethodClosure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Stubs/MRJ 2 &amp; 3 Stubs/MRJToolkitStubs.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Stubs/MRJ 2 &amp; 3 Stubs/Read Me.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Stubs/MRJ 4 Stubs/AppleJavaExtensions.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/Stubs/MRJ 4 Stubs/Read Me.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/app/AboutJMenuItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/app/AboutMenuItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/app/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/app/PreferencesJMenuItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/app/PreferencesMenuItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/app/QuitJMenuItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/app/QuitMenuItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/event/ApplicationEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/io/ApplicationFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/io/DocumentFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/io/SpecialFolder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/mac/AppleEventHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/mac/JD2AppleEventFunctions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/mac/JD2AppleEventHandlerThunk.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/mac/JD3AppleEventHandlerThunk.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/mac/JD3CarbonFunctions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/mac/MRJ23EventProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/mac/MRJ4EventProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/mac/MRJAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/mac/MRJEventProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/mac/MRJFolderConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/ui/AbstractScreenAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/ui/ApplicationDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/ui/FolderDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/ui/JScreenMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/ui/JScreenMenuBar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/ui/JScreenMenuItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/ui/ScreenMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/ui/ScreenMenuBar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/ui/ScreenMenuItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/src/net/roydesign/ui/StandardMacAboutFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/alm-process/snippets/page.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/class_diagram.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/allclasses-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/allclasses-noframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/constant-values.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/deprecated-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/index-all.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/app/AboutJMenuItem.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/app/AboutMenuItem.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/app/Application.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/app/PreferencesJMenuItem.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/app/PreferencesMenuItem.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/app/QuitJMenuItem.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/app/QuitMenuItem.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/app/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/app/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/app/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/event/ApplicationEvent.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/event/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/event/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/event/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/io/ApplicationFile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/io/DocumentFile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/io/SpecialFolder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/io/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/io/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/io/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/mac/AppleEventHandler.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/mac/MRJAdapter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/mac/MRJFolderConstants.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/mac/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/mac/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/mac/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/ui/AbstractScreenAction.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/ui/ApplicationDialog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/ui/FolderDialog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/ui/JScreenMenu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/ui/JScreenMenuBar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/ui/JScreenMenuItem.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/ui/ScreenMenu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/ui/ScreenMenuBar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/ui/ScreenMenuItem.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/ui/StandardMacAboutFrame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/ui/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/ui/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/net/roydesign/ui/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/overview-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/overview-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/package-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/resources/inherit.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/serialized-form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/docs/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/documents.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/foldersandapps.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/frameless.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/license.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/Third_Party/MRJAdapter/www/screenmenu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/appbundler/appbundler-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/buildDistributions.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/dist/PlotDigitizer.app/Contents/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/dist/PlotDigitizer.app/Contents/Java/PlotDigitizer.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/dist/PlotDigitizer.app/Contents/MacOS/JavaAppLauncher" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/dist/PlotDigitizer.app/Contents/PkgInfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/dist/PlotDigitizer.app/Contents/Resources/PlotDigitizer.icns" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/dist/PlotDigitizer.app/Contents/Resources/en.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/dist/PlotDigitizer.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/l4j/PlotDigitizerApp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/l4j/PlotDigitizerIcon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/lib/MRJAdapter.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/lib/bare-bones-browser-launch-3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/resources_macosx/PlotDigitizer.icns" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/AddEdit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/AppPreferences.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/AppWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/AutoDigitizeThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/AutoOptionsDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/DespeckleThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/ImageData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/MoveEdit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/PDFReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/PlotDigitizer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/RemoveEdit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/ScaleInputDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/TableWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/com/Data/CalibrateRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/com/Data/PointTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/com/Data/Triple2D.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/com/Data/XMLLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/com/Data/XMLSaver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/com/logging/LogHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/com/logging/Loggish.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/image/MedianFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/io/ExtFilenameFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/io/StreamGobbler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/swing/AppUtilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/swing/DecimalField.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/swing/EscapeJDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/swing/FormattedDocument.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/swing/GenericActionListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/swing/GenericItemListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/swing/MDIApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/swing/MainApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/swing/Preferences.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/swing/ProgressBarHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/swing/QuitListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/swing/TableClipboardAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/swing/TransferActionListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/swing/undo/ExtendedUndoManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/tools/GeomTools.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/tools/math/MathTools.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/tools/tables/CSVReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/tools/tables/FTableDatabase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/tools/tables/FTableReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/tools/tables/FloatArrayNDim.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/tools/tables/FloatTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/tools/tables/TRUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/util/ExponentialFormat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/util/GeneralFormat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/util/UTF8Control.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/COPYING" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/build.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/barchart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/crosshair.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/crosshair.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/icon/generate.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/icon/icns.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/icon/icon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/icon/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/icon/icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/icon/icon_128x128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/icon/icon_128x128@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/icon/icon_16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/icon/icon_16x16@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/icon/icon_256x256.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/icon/icon_256x256@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/icon/icon_32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/icon/icon_32x32@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/icon/icon_512x512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/icon/icon_512x512@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/icon/wpd.icns" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/map.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/map.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/perspective.odg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/perspective.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/polaraxes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/polaraxes.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/ternaryaxes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/ternaryaxes.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/ternarynormal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/ternarynormal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/ternaryreverse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/ternaryreverse.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/xyaxes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/images/xyaxes.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/controllers/appData.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/controllers/autoDetection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/controllers/axesCalibration.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/controllers/browserInfo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/controllers/colorPicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/controllers/datasetManagement.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/controllers/gridDetection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/controllers/i18n.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/controllers/imageManager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/controllers/manualDetection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/controllers/measurements.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/core/AEalgos/averagingWindow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/core/AEalgos/averagingWindowCore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/core/AEalgos/averagingWindowWithStepSize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/core/AEalgos/barExtraction.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/core/AEalgos/blobdetector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/core/AEalgos/xStepWithInterpolation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/core/autoDetection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/core/axes/bar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/core/axes/image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/core/axes/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/core/axes/polar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/core/axes/ternary.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/core/axes/xy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/core/calibration.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/core/colorAnalysis.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/core/connectedPoints.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/core/dataProviders.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/core/dataset.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/core/dateConversion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/core/gridDetectionCore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/core/inputParser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/core/mathFunctions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/core/plotData.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/services/args.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/services/dataExport.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/services/download.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/services/log.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/services/plotly.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/services/saveResume.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/services/scriptInjection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/tools/axesCalibrationTools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/tools/colorPickerTools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/tools/graphicsHelper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/tools/gridDetectionTools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/tools/imageOps.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/tools/keyCodes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/tools/manualDetectionTools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/tools/maskTools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/tools/measurementTools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/widgets/dataTable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/widgets/graphicsWidget.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/widgets/layoutManager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/widgets/popups.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/widgets/sidebars.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/widgets/toolbars.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/widgets/transformationEquations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/widgets/tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/widgets/webcam.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/javascript/widgets/zoom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/locale/de_DE/LC_MESSAGES/messages.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/locale/de_DE/LC_MESSAGES/messages.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/locale/en_US/LC_MESSAGES/messages.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/locale/en_US/LC_MESSAGES/messages.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/locale/fr_FR/LC_MESSAGES/messages.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/locale/fr_FR/LC_MESSAGES/messages.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/locale/ja/LC_MESSAGES/messages.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/locale/ja/LC_MESSAGES/messages.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/locale/messages.pot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/locale/ru/LC_MESSAGES/messages.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/locale/ru/LC_MESSAGES/messages.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/locale/zh_CN/LC_MESSAGES/messages.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/locale/zh_CN/LC_MESSAGES/messages.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/release_notes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/renderHTML.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/start.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/templates/_base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/templates/_menubar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/templates/_popups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/templates/_sidebars.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/templates/_strings.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/templates/_toolbars.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/templates/_tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/templates/babel.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/templates/dev.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/templates/offline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/tests/axes_tests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/tests/date_tests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/tests/files/wpd3_bar.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/tests/files/wpd3_xy.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/tests/files/wpd4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/tests/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/tests/save_tests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/tests/testhelpers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/tests/uitests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/tests/xstep_with_interp_tests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/thirdparty/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/thirdparty/getThirdparty.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/app/widgets.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/chrome/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/chrome/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/chrome/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docker/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docker/build.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docker/run.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/autoSidebar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/averagingWindow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/barAlignment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/barInfo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/barchart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/blobDetection.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/csvSorting.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/dateFormat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/defineAxesPopup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/fgColor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/fileMenu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/gridRemoval.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/histogram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/imageEditingSidebar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/loadPopup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/manageDatasets.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/manualSidebar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/mapAlignment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/mapInfo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/markRegion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/polarAlignment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/polarInfo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/ternaryAlignment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/ternaryInfo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/test.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/test.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/testScan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/testSmall.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/topButtons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/wpd_algos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/wpd_dataset_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/wpd_formatting.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/xStep.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/xStepWithActualUnits.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/xStepWithInterpolation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/xyAlignment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/xyAxesInfo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/yStep.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/figures/zoom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/userManual.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/docs/latex/userManual.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/electron/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/electron/build-mac.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/electron/build-packages.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/electron/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/electron/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/research/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/research/errorbar_detection.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/research/extract_heatmaps.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/research/generate_heatmaps.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/research/images/heatmap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/webserver/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/webserver/WebPlotDigitizer.service" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/webserver/download.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/webserver/filesystem.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/webserver/logging.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/webserver/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebPlotDigitizer/webserver/settings.json.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engauge-digitizer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scatteract" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="chart-digitizer.ipynb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chart-digitizer.ipynb">
+          <provider selected="true" editor-type-id="ipnb-editor">
+            <state>
+              <selected id="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Prabhat Ranjan &lt;prabhat01@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="reference" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/chart-digitizer.ipynb" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="29" />
+    <option name="width" value="1280" />
+    <option name="height" value="698" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="chart-digitizer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chart-digitizer" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="chart-digitizer" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="chart-digitizer" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/src/main/java/hackathon" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Datathief" />
+      <recent name="$PROJECT_DIR$/Datathief/" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Jupyter Notebook.chart-digitizer">
+    <configuration name="Datathief.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/Datathief.jar" />
+    </configuration>
+    <configuration name="chart-digitizer" type="JupiterNotebook" factoryName="Jupyter Notebook">
+      <module name="chart-digitizer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="additionalOptions" value="" />
+      <option name="ipnbHost" value="127.0.0.1" />
+      <option name="ipnbPort" value="8888" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <list>
+      <item itemvalue="Jupyter Notebook.chart-digitizer" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="702f7963-a9de-45fc-960e-a2c724434127" name="Default" comment="" />
+      <created>1528457640210</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1528457640210</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Added reference project code">
+      <created>1528751531444</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1528751531444</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="29" width="1280" height="698" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6785714" visible="true" weight="0.24609375" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="R Packages" />
+      <window_info anchor="right" id="R Graphics" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32852563" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3294509" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info id="Structure" order="1" sideWeight="0.32142857" side_tool="true" visible="true" weight="0.24609375" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.46153846" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="DB Execution Console" order="7" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="DB Browser" order="2" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Project Explorer" order="2" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info id="Job Explorer" order="2" />
+      <window_info id="Learn" order="2" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="bottom" id="Console" order="7" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added reference project code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added reference project code" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/engauge-digitizer/src/Matrix/Matrix.cpp" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/AboutCanvas.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/TraceRun.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/DataTracer.class" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/Computer.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/DataFunction.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/Datathief.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/AboutCanvas.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/TraceRun.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/DataTracer.class" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/PredefinedDeg.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/PredefinedFormat.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/TraceFilter.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/TryParser.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/Alert.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/AxesInfo.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/AxesDialog.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/WhileParser.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/PostMonadicParser.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/Monadic.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/Expression.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/WhileStatement.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/BlockStatement.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/ExpressionParser.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/AboutDialog.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/Array.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/ArrayCell.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/ArrayParser.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/AxesDefinition.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/BlockParser.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/Computer.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/DataFunction.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/Datathief.class" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/TraceRun.class" />
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/DataTracer.class" />
+    <entry file="file://$PROJECT_DIR$/src/app/templates/_base.html" />
+    <entry file="file://$PROJECT_DIR$/src/app/templates/dev.html" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/Datathief.jar!/AboutCanvas.class" />
+    <entry file="file://$PROJECT_DIR$/PlotDigitizer/src/PDFReader.java" />
+    <entry file="file://$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/image/MedianFilter.java" />
+    <entry file="file://$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/tools/math/MathTools.java" />
+    <entry file="file://$PROJECT_DIR$/PlotDigitizer/src/jahuwaldt/util/ExponentialFormat.java" />
+    <entry file="file://$PROJECT_DIR$/PlotDigitizer/src/ImageData.java" />
+    <entry file="file://$PROJECT_DIR$/engauge-digitizer/src/Matrix/Matrix.cpp" />
+    <entry file="file://$PROJECT_DIR$/chart-digitizer.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="9" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="ideajad">
+    <property name="annotate" value="false" />
+    <property name="annotateFully" value="false" />
+    <property name="braces" value="false" />
+    <property name="clear" value="false" />
+    <property name="confirmNavigationTriggeredDecompile" value="true" />
+    <property name="dead" value="true" />
+    <property name="defaultInitializers" value="false" />
+    <property name="dissassemblerOnly" value="false" />
+    <property name="fieldsFirst" value="true" />
+    <property name="fileExtension" value="java" />
+    <property name="fullyQualifiedNames" value="false" />
+    <property name="indentation" value="4" />
+    <property name="intRadix" value="10" />
+    <property name="lineNumbersAsComments" value="true" />
+    <property name="longRadix" value="10" />
+    <property name="maxStringLength" value="64" />
+    <property name="nocast" value="false" />
+    <property name="noclass" value="false" />
+    <property name="nocode" value="false" />
+    <property name="noconv" value="false" />
+    <property name="noctor" value="false" />
+    <property name="nodos" value="false" />
+    <property name="nofd" value="false" />
+    <property name="noinner" value="false" />
+    <property name="nolvt" value="false" />
+    <property name="nonlb" value="false" />
+    <property name="outputDirectory" value="" />
+    <property name="packFields" value="3" />
+    <property name="packImports" value="7" />
+    <property name="prefixNumericalClasses" value="_cls" />
+    <property name="prefixNumericalFields" value="_fld" />
+    <property name="prefixNumericalLocals" value="_lcl" />
+    <property name="prefixNumericalMethods" value="_mth" />
+    <property name="prefixNumericalParameters" value="_prm" />
+    <property name="prefixUnusedExceptions" value="_ex" />
+    <property name="readonly" value="false" />
+    <property name="safe" value="false" />
+    <property name="sort" value="false" />
+    <property name="spaceAfterKeyword" value="false" />
+    <property name="splitStringsAtNewline" value="false" />
+    <property name="useTabs" value="false" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="Copyright.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

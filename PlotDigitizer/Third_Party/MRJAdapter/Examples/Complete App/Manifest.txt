@@ -1,2 +1,0 @@
-Main-Class: Test
-Class-Path: Test.jar MRJAdapter.jar
