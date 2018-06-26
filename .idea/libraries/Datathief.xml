@@ -3,6 +3,7 @@
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/Datathief.jar!/" />
     </CLASSES>
+    <JAVADOC />
     <SOURCES>
       <root url="file://$PROJECT_DIR$/DataTheif" />
       <root url="file://$PROJECT_DIR$/Datathief" />
