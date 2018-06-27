@@ -1,7 +1,15 @@
 # chart-digitizer
 
--	ML approach: generate random chart for supervised training dataset and feed it into CNN model.
--	Procedural approach: Use opencv and tesseract-ocr to detect legends and bar length in chart.
+##ML approach: 
+ Generate random chart for supervised training dataset and feed it into CNN model.
+
+-	Random chart generator
+-	Model training using object detection   
+-	Result analysis
+
+
+##Procedural approach: TODO
+Use opencv and tesseract-ocr to detect legends and bar length in chart.
 
 ![flow](bar-chart-extraction-flow.png)
 
