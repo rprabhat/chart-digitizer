@@ -9,6 +9,8 @@ Created on Tue Jun 26 15:04:00 2018
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+import matplotlib
+matplotlib.use('pdf')
 #import seaborn as sns
 #import io
 #from PIL import Image
@@ -27,9 +29,11 @@ def img_gen_bar():
     fig=plt.gcf()
     fig.canvas.draw()
     # grab the pixel buffer and dump it into a numpy array
-    pixels = np.array(fig.canvas.renderer._renderer)
+    data = np.fromstring(fig.canvas.tostring_rgb(), dtype=np.uint8, sep='')
+    pixels = data.reshape(fig.canvas.get_width_height()[::-1] + (3,))
+    #pixels = np.array(fig.canvas.renderer._renderer)
 
-    return data.values.ravel() , pixels
+    return data.values.ravel(), pixels
 
 
 def img_plot_rgb(pixels):

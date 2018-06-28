@@ -62,6 +62,7 @@ from keras import backend as K
 
 #import tensorflow as tf
 #import numpy
+from keras import layers, models, optimizers
 from keras.models import Sequential
 from keras.utils.np_utils import to_categorical
 from keras.layers import LSTM, Dense, Dropout, Flatten, Embedding, TimeDistributed
@@ -72,6 +73,7 @@ from sklearn.model_selection import KFold
 from sklearn.preprocessing import StandardScaler ,quantile_transform
 from sklearn.pipeline import Pipeline
 
+from keras import callbacks
 
 # In[Charts]:
  # -*- coding: utf-8 -*-
@@ -92,11 +94,11 @@ Created on Tue Jun 26 15:04:00 2018
 
 def img_gen_bar():
     """ Generate a random bar chart exporting height array and pixel array
-        TODO:
+        TODO: .rand(5,1) = 5 bars with random data from zero to 1
         TODO: Add options for randomising scale, # bars, showing axis, grids, rotating labels, legends etc.
     """
     data = pd.DataFrame(data=np.random.rand(5,1), index=range(1,6), columns=['Fred'])
-    m,n = np.shape(data)
+    #m,n = np.shape(data)
 
     plt.clf()
     plt.bar(x=data.index.values, height=data.values.ravel(), color='k') # figsize=(10, 6))
@@ -104,12 +106,36 @@ def img_gen_bar():
     # bar_width = 0.35
     # alpha = .3
     fig=plt.gcf()
-    fig.set_size_inches(3, 2)
+    fig.set_size_inches(2.24, 2.24)
     plt.axis('off')
     fig.tight_layout()
     fig.canvas.draw()
     # grab the pixel buffer and dump it into a numpy array
-    pixels = np.array(fig.canvas.renderer._renderer)
+    pixels = np.array(fig.canvas.renderer._renderer)[:,:,:3]
+    # print(pixels.shape)
+    return pixels, data.values.ravel()
+
+
+def img_gen_scat():
+    """ Generate a random scatter chart exporting height array and pixel array
+        TODO: .rand(5,1) = 5 bars with random data from zero to 1
+        TODO: Add options for randomising scale, # bars, showing axis, grids, rotating labels, legends etc.
+    """
+    data = pd.DataFrame(data=np.random.rand(5,1), index=range(1,6), columns=['Fred'])
+    #m,n = np.shape(data)
+
+    plt.clf()
+    plt.scatter(x=data.index.values, y=data.values.ravel(), color='k') # figsize=(10, 6))
+    # Options for later from https://matplotlib.org/api/_as_gen/matplotlib.pyplot.bar.html
+    # bar_width = 0.35
+    # alpha = .3
+    fig=plt.gcf()
+    fig.set_size_inches(2.24, 2.24)
+    plt.axis('off')
+    fig.tight_layout()
+    fig.canvas.draw()
+    # grab the pixel buffer and dump it into a numpy array
+    pixels = np.array(fig.canvas.renderer._renderer)[:,:,:3]
 
     return pixels, data.values.ravel()
 
@@ -124,11 +150,21 @@ def img_plot_rgb(pixels):
     plt.imshow(pixels)
     return fig, ax
 
+def test_X_n(X=None, y=None, n=0):
+    if X is None:
+        X, y = img_gen_bar()
+
+    pixels = X[n,:,:,:].reshape(*np.shape(X)[1:])
+    y_n    = y[n,:]
+    img_plot_rgb(pixels)
+    img_show_shell(pixels)
+    print(mdlprd, y_n)
+
 def test():
 
-    X, y = img_gen_bar()
-    img_plot_rgb(X)
-    img_show_shell(X)
+    pixels, y_n = img_gen_scat()
+    img_plot_rgb(pixels)
+    img_show_shell(pixels)
     print(y)
 
     #for neural net
@@ -145,7 +181,7 @@ def test100():
 
     return data
 
-def img_gen(chttype='bar', batch = 10):
+def img_gen(chttype='bar', batch = 10): #TODO add kwargs list
     if chttype=='rand':
         # use a random integer to choose the chart type
         chttype = np.random.randint(0,3)
@@ -157,6 +193,8 @@ def img_gen(chttype='bar', batch = 10):
         for b in range(batch):
             if chttype=='bar':
                 X_, y_ = img_gen_bar()
+            if chttype=='scat':
+                X_, y_ = img_gen_scat()
             else:
                 #do something else
                 X_, y_ = img_gen_bar()
@@ -173,15 +211,23 @@ def img_gen(chttype='bar', batch = 10):
 
         yield X, y
     return X, y
+
+def train_generator( batch_size, shift_fraction=0.):
+    gen = img_gen(chttype='scat', batch = 50)  #add arguments here for color='rand', chttype=... etc.
+    while True:
+        x_batch, y_batch = next(gen)
+        yield ([x_batch, y_batch], [y_batch, x_batch])
+    return ([x_batch, y_batch], [y_batch, x_batch])
+
 #matplotlib.rcParams['figure.figsize'] = (12.0, 8.0)
 
-
-# In[Setup dat]:
-# Then produce evaluation data set or 1 off dataset
-
-gen = img_gen()
-X, y = next(gen)
-print("Shapes of 1st Training sets: ", np.shape(X), np.shape(y))
+#
+## In[Setup dat]:
+## Then produce evaluation data set or 1 off dataset
+#
+#gen = img_gen(chttype='bar', batch = 10000)  #add arguments here for color='rand', chttype=... etc.
+#X, y = next(gen)
+#print("Shapes of 1st Training sets: ", np.shape(X), np.shape(y))
 
 # In[Set backend]
 #from keras import backend as K
@@ -193,12 +239,13 @@ verbose = 2  #True/False, extra verbose=2
 
 config={}
 #lagged return features
-config['layers'] = 3  #Single Int
-config['nodes'] = [34]#[75, 50, 25, 10, 5] #ignored for 1 layer. size of output. None to match X[0], Int or list of dims per layer. [10, 5, 1]
-config['epochs'] = 10  # e.g. use 3*3 for 1st tstrain then 3 for tsroll (lower 'weight'? if less epochs)
-config['actvn'] = 'tanh'  # sigmoid'
+config['verbose'] = 3  #Single Int
+#config['layers'] = 3  #Single Int
+#config['nodes'] = [300*200*10, 300*200*5, 300*200]#[75, 50, 25, 10, 5] #ignored for 1 layer. size of output. None to match X[0], Int or list of dims per layer. [10, 5, 1]
+#config['epochs'] = 10  # e.g. use 3*3 for 1st tstrain then 3 for tsroll (lower 'weight'? if less epochs)
+#config['actvn'] = 'relu' #tanh'  #
 
-config['Description'] = 'Quintile Forecast'
+config['Description'] = 'Digitize Bar Charts'
 config['StartTime'] = time.time()
 
 config['Model'] = "CNN"
@@ -563,11 +610,11 @@ def model_CNN(x_train, y_train, x_test=None, y_test=None, kwargs={}):
     from keras.optimizers import SGD
 
 
-    layers = kwargs.get('layers', 1 ) #TODO
+    layers = kwargs.get('layers', 10 ) #TODO
     nodes = kwargs.get('nodes', None) #TODO
 
     if nodes is None or nodes==0 or nodes==[0]:
-        nodes = [np.shape(x_train)[1]]
+        nodes = [np.shape(x_train)[1]*3]
     elif isinstance(nodes, (int, np.integer)): # turn int to list
         nodes = [nodes]
 
@@ -619,7 +666,7 @@ def model_CNN(x_train, y_train, x_test=None, y_test=None, kwargs={}):
     model.add(Dropout(dropout ))
 
     model.add(Flatten())
-    model.add(Dense(np.max(input_shape), activation=actvn))
+    model.add(Dense(np.min(input_shape), activation=actvn))
     model.add(Dropout(dropout*2))
     model.add(Dense(n_out, activation=actvl))
 
@@ -628,7 +675,7 @@ def model_CNN(x_train, y_train, x_test=None, y_test=None, kwargs={}):
     elif lr:
         optimizer = SGD(lr=lr, decay=1e-6, momentum=0.01, nesterov=True)
     else:
-        optimizer = keras.optimizers.SGD(lr=0.01, momentum=0.0, decay=0.0, nesterov=False)
+        optimizer = 'Nadam' #keras.optimizers.SGD(lr=0.01, momentum=0.0, decay=0.0, nesterov=False)
 
     if is_bool_dtype(y_train):
         model.compile(loss='binary_crossentropy', optimizer=optimizer)
@@ -655,21 +702,146 @@ def model_CNN(x_train, y_train, x_test=None, y_test=None, kwargs={}):
 
 
 def r2_keras(y_true, y_pred):
+    # calculate R2 value (not built in :( )
     SS_res =  K.sum(K.square(y_true - y_pred))
     SS_tot = K.sum(K.square(y_true - K.mean(y_true)))
     #( 1 - SS_res/(SS_tot + K.epsilon()) )
     return ( 1 - SS_res/(SS_tot ) )
 
+# In[ResNet]
+def model_resnet():
+    from keras.applications.resnet50 import ResNet50
+#    from keras.preprocessing import image
+#    from keras.applications.resnet50 import preprocess_input, decode_predictions
+
+    model = ResNet50(weights='imagenet')
+
+    model.summary()
+    print("Inputs: {}".format(model.input_shape))
+    print("Outputs: {}".format(model.output_shape))
+
+    return model
+# In[CapsNet]
+
+def CapsNet(input_shape, n_class, routings):
+    from capsulelayers import CapsuleLayer, PrimaryCap, Length, Mask
+
+    K.set_image_data_format('channels_last')
+    """
+    A Capsule Network on MNIST.
+    :param input_shape: data shape, 3d, [width, height, channels]
+    :param n_class: number of classes
+    :param routings: number of routing iterations
+    :return: Two Keras Models, the first one used for training, and the second one for evaluation.
+            `eval_model` can also be used for training.
+    """
+    x = layers.Input(shape=input_shape)
+
+    # Layer 1: Just a conventional Conv2D layer
+    conv1 = layers.Conv2D(filters=256, kernel_size=9, strides=1, padding='valid', activation='relu', name='conv1')(x)
+
+    # Layer 2: Conv2D layer with `squash` activation, then reshape to [None, num_capsule, dim_capsule]
+    primarycaps = PrimaryCap(conv1, dim_capsule=8, n_channels=32, kernel_size=9, strides=2, padding='valid')
+
+    # Layer 3: Capsule layer. Routing algorithm works here.
+    digitcaps = CapsuleLayer(num_capsule=n_class, dim_capsule=16, routings=routings,
+                             name='digitcaps')(primarycaps)
+
+    # Layer 4: This is an auxiliary layer to replace each capsule with its length. Just to match the true label's shape.
+    # If using tensorflow, this will not be necessary. :)
+    out_caps = Length(name='capsnet')(digitcaps)
+
+    # Decoder network.
+    y = layers.Input(shape=(n_class,))
+    masked_by_y = Mask()([digitcaps, y])  # The true label is used to mask the output of capsule layer. For training
+    masked = Mask()(digitcaps)  # Mask using the capsule with maximal length. For prediction
+
+    # Shared Decoder model in training and prediction
+    decoder = models.Sequential(name='decoder')
+    decoder.add(layers.Dense(512, activation='relu', input_dim=16*n_class))
+    decoder.add(layers.Dense(1024, activation='relu'))
+    decoder.add(layers.Dense(np.prod(input_shape), activation='sigmoid'))
+    decoder.add(layers.Reshape(target_shape=input_shape, name='out_recon'))
+
+    # Models for training and evaluation (prediction)
+    train_model = models.Model([x, y], [out_caps, decoder(masked_by_y)])
+    eval_model = models.Model(x, [out_caps, decoder(masked)])
+
+    # manipulate model
+    noise = layers.Input(shape=(n_class, 16))
+    noised_digitcaps = layers.Add()([digitcaps, noise])
+    masked_noised_y = Mask()([noised_digitcaps, y])
+    manipulate_model = models.Model([x, y, noise], decoder(masked_noised_y))
+    return train_model, eval_model, manipulate_model
+
+
+def margin_loss(y_true, y_pred):
+    """
+    Margin loss for Eq.(4). When y_true[i, :] contains not just one `1`, this loss should work too. Not test it.
+    :param y_true: [None, n_classes]
+    :param y_pred: [None, num_capsule]
+    :return: a scalar loss value.
+    """
+    L = y_true * K.square(K.maximum(0., 0.9 - y_pred)) + \
+        0.5 * (1 - y_true) * K.square(K.maximum(0., y_pred - 0.1))
+
+    return K.mean(K.sum(L, 1))
+
+
+
+# In[Setup args]:
+class my_args():
+    def __init__(self):
+        self.lr = 0.01
+        self.lr_decay  = 0.001
+        self.lam_recon = 0.392  # , type=float,           help="The coefficient for the loss of decoder")
+        self.routings = 3
+        #return self
+args = my_args()
 
 # In[Build Keras Model ]:
+if True:
+    # Setup image generator
+    gen = img_gen(chttype='scat', batch = 5)  #add arguments here for color='rand', chttype=... etc.
 
-model = model_CNN(X, y, x_test=None, y_test=None, kwargs=config)
-print(model.summary())
-print("Inputs: {}".format(model.input_shape))
-print("Outputs: {}".format(model.output_shape))
-print("Actual input: {}".format(X.shape))
-print("Actual output: {}".format(y.shape))
-print('Model Loss: ' + model.loss)
+    # Create sample data
+    X, y = next(gen)
+
+    # Build model
+    model = model_CNN(X, y, x_test=None, y_test=None, kwargs=config)
+    # Then produce evaluation data set or 1 off dataset
+
+    print("Shapes of 1st Training sets: ", np.shape(X), np.shape(y))
+
+    #NOTE 10 steps per epoch and 100 batches
+    #(10*100*200*300*4*32)/1024/1024/1024 = 7.1 Gb
+else: #CapsNewt
+    lr_decay = callbacks.LearningRateScheduler(schedule=lambda epoch: args.lr * (args.lr_decay ** epoch))
+
+
+    """
+    # Training without data augmentation:
+    model.fit([x_train, y_train], [y_train, x_train], batch_size=args.batch_size, epochs=args.epochs,
+              validation_data=[[x_test, y_test], [y_test, x_test]], callbacks=[log, tb, checkpoint, lr_decay])
+    """
+
+    # define model
+    model, eval_model, manipulate_model = CapsNet(input_shape=X.shape[1:],
+                                                  n_class=len(np.unique(np.argmax(y, 1))),
+                                                  routings=args.routings)
+    # compile the model
+    model.compile(optimizer=optimizers.Adam(lr=args.lr),
+                  loss=[margin_loss, 'mse'],
+                  loss_weights=[1., args.lam_recon],
+                  metrics={'capsnet': 'accuracy'})
+    model.summary()
+
+    gen = train_generator(batch_size = 10)  #add arguments here for color='rand', chttype=... etc.
+    #([X_train, y_train], [X_text, y_test]) = next(gen2)
+    # Begin: Training with data augmentation ---------------------------------------------------------------------#
+    #m = model.fit_generator(gen2, steps_per_epoch=10, verbose=1)
+
+
 
 # In[Evaluate/Test Keras Simple]:
 if True:
@@ -682,13 +854,13 @@ if True:
         # Make predictions.
         if True: #Use generator
             i = 0
-            while i < getattr(config, 'iterations' , 3333):
+            while i < getattr(config, 'iterations' , 3):
                 i += 1
                 X, y = next(gen)
                 if verbose: print('Training: Fit and Predicting for %s. Shapes: '%('img'), np.shape(X), np.shape(y))
 
                 # Step 1
-                m = model.fit_generator(gen, steps_per_epoch=100, verbose=1)
+                m = model.fit_generator(gen, steps_per_epoch=10, verbose=1)
                 mdlfit.append(m) #, steps=100))
                 s = model.evaluate_generator(gen, steps=10)
                 mdlscr.append(s)
