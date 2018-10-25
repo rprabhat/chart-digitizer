@@ -112,8 +112,8 @@ def img_gen_bar():
     fig.canvas.draw()
     # grab the pixel buffer and dump it into a numpy array
     pixels = np.array(fig.canvas.renderer._renderer)[:,:,:3]
-    # print(pixels.shape)
-    return pixels, data.values.ravel()
+    #print(pixels.shape)
+    return pixels, data.index.values + data.values.ravel()
 
 
 def img_gen_scat():
@@ -123,21 +123,22 @@ def img_gen_scat():
     """
     data = pd.DataFrame(data=np.random.rand(5,1), index=range(1,6), columns=['Fred'])
     #m,n = np.shape(data)
-
+    print(data)
     plt.clf()
     plt.scatter(x=data.index.values, y=data.values.ravel(), color='k') # figsize=(10, 6))
     # Options for later from https://matplotlib.org/api/_as_gen/matplotlib.pyplot.bar.html
     # bar_width = 0.35
     # alpha = .3
     fig=plt.gcf()
-    fig.set_size_inches(2.24, 2.24)
+    fig.set_size_inches(1, 1)
     plt.axis('off')
     fig.tight_layout()
     fig.canvas.draw()
     # grab the pixel buffer and dump it into a numpy array
     pixels = np.array(fig.canvas.renderer._renderer)[:,:,:3]
+    print(pixels,  data.index.values + data.values.ravel() )
 
-    return pixels, data.values.ravel()
+    return pixels,  np.append(data.index.values ,  data.values.ravel());
 
 def img_show_shell(pixels):
     from PIL import Image
@@ -165,7 +166,7 @@ def test():
     pixels, y_n = img_gen_scat()
     img_plot_rgb(pixels)
     img_show_shell(pixels)
-    print(y)
+    print(y_n)
 
     #for neural net
     X=X/255
@@ -656,12 +657,12 @@ def model_CNN(x_train, y_train, x_test=None, y_test=None, kwargs={}):
     # input: 100x100 images with 3 channels -> (100, 100, 3) tensors.
     # this applies 32 convolution filters of size 3x3 each.
     model.add(Conv2D(n_conv, conv, activation=actvn, input_shape=input_shape))
-    model.add(Conv2D(n_conv, conv, activation=actvn))
+    #model.add(Conv2D(n_conv, conv, activation=actvn))
     model.add(MaxPooling2D(pool_size=(2, 2)))
     model.add(Dropout(dropout ))
 
     model.add(Conv2D(n_conv*2, conv, activation=actvn))
-    model.add(Conv2D(n_conv*2, conv, activation=actvn))
+    #model.add(Conv2D(n_conv*2, conv, activation=actvn))
     #model.add(MaxPooling2D(pool_size=(2, 2)))
     model.add(Dropout(dropout ))
 
@@ -854,7 +855,7 @@ if True:
         # Make predictions.
         if True: #Use generator
             i = 0
-            while i < getattr(config, 'iterations' , 3):
+            while i < getattr(config, 'iterations' , 30000):
                 i += 1
                 X, y = next(gen)
                 if verbose: print('Training: Fit and Predicting for %s. Shapes: '%('img'), np.shape(X), np.shape(y))
