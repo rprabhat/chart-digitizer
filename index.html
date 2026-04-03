@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart Digitizer - ML Data Extraction</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0d1117; color: #c9d1d9; min-height: 100vh;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 60px 20px; }
+        h1 { color: #58a6ff; font-size: 2.5rem; margin-bottom: 10px; }
+        .tagline { color: #8b949e; font-size: 1.2rem; margin-bottom: 40px; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 40px; }
+        .feature { background: #161b22; padding: 20px; border-radius: 8px; border: 1px solid #30363d; }
+        .feature h3 { color: #58a6ff; margin-bottom: 10px; }
+        .feature p { color: #8b949e; font-size: 0.9rem; }
+        .cta { 
+            background: #238636; color: white; padding: 15px 30px; 
+            border-radius: 8px; text-decoration: none; font-weight: 600;
+            display: inline-block;
+        }
+        .cta:hover { background: #2ea043; }
+        .stats { margin-top: 40px; padding-top: 20px; border-top: 1px solid #30363d; }
+        .stats span { margin-right: 20px; color: #8b949e; }
+        footer { margin-top: 60px; color: #484f58; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Chart Digitizer</h1>
+        <p class="tagline">Extract data points from chart images using machine learning</p>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>🤖 Machine Learning</h3>
+                <p>CNN-based object detection for accurate data point identification</p>
+            </div>
+            <div class="feature">
+                <h3>👁️ Computer Vision</h3>
+                <p>OpenCV and Tesseract OCR for legend and axis detection</p>
+            </div>
+            <div class="feature">
+                <h3>📈 Data Extraction</h3>
+                <p>Convert chart images into actionable numerical data</p>
+            </div>
+        </div>
+        
+        <a href="https://github.com/rprabhat/chart-digitizer" class="cta">View on GitHub →</a>
+        
+        <div class="stats">
+            <span>⭐ 18 Stars</span>
+            <span>🍴 4 Forks</span>
+            <span>📜 Apache 2.0</span>
+        </div>
+        
+        <footer>
+            Built by <a href="https://github.com/rprabhat" style="color: #58a6ff;">@rprabhat</a> | 
+            Data Systems & ML Enthusiast
+        </footer>
+    </div>
+</body>
+</html>
